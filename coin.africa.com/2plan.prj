@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model:Project xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:model="http://www.2b-intime.com/model" name="coin.africa.com" context="sample" UUID="_gLdBcKdgEeSWQamCpZbrmg" startDate="2015-02-01T00:00:00.000-0500">
+  <maps type="net.intime.crud.xml.map.path">
+    <entries key="path" value="coin.africa.com"/>
+  </maps>
+  <maps type="sample">
+    <entries key="net.intime.project.nature.mapentry.enableTeam" value="true"/>
+    <entries key="net.intime.project.nature.mapentry.enableRoles" value="true"/>
+    <entries key="net.intime.product.mapentry.standardWorkPackageType" value="0"/>
+  </maps>
+  <calendar context="effortdriven" UUID="_VGNBgOghEd-pX4OJvgkDgw">
+    <exceptions name="Team Event" context="effortdriven" UUID="_Fk9DsOgtEd-8bNYLQG6jWw" date="2015-02-28T06:45:56.240-0500"/>
+  </calendar>
+  <workPackages name="Project Management" context="effortdriven" UUID="_YANUgOghEd-pX4OJvgkDgw" startDate="2015-02-01T00:00:00.000-0500" finishDate="2015-03-19T03:00:00.000-0400" accumulatedEffort="490.0">
+    <workPackages name="Business Plan" context="effortdriven" UUID="_WwPAwOgpEd-WSPN8BfFZWw" state="accepted" startDate="2015-02-02T00:00:00.000-0500" finishDate="2015-02-06T02:00:00.000-0500" planEffort="25.0" actualEffort="30.0">
+      <successors name="-" context="effortdriven" UUID="_qXbCwOgpEd-WSPN8BfFZWw" successor="//@workPackages.0/@workPackages.1"/>
+      <assignments name="-" context="effortdriven" UUID="_JtoeYOgvEd-8bNYLQG6jWw" assignment="80.0" resource="//@persons.3"/>
+      <baselines name="11/4/10" context="effortdriven" UUID="_R44MEegwEd-8bNYLQG6jWw" startDate="2015-02-01T21:42:23.272-0500" finishDate="2015-02-06T01:42:23.272-0500" planEffort="20.0"/>
+    </workPackages>
+    <workPackages name="ROI Calculation" context="effortdriven" UUID="_XQ_kcOgpEd-WSPN8BfFZWw" type="deactivated" startDate="2015-02-06T02:00:00.000-0500" finishDate="2015-02-06T02:00:00.000-0500" planEffort="16.0" predecessors="//@workPackages.0/@workPackages.0/@successors.0">
+      <successors name="-" context="effortdriven" UUID="_qXbp0OgpEd-WSPN8BfFZWw" successor="//@workPackages.0/@workPackages.2"/>
+      <assignments name="-" context="effortdriven" UUID="_LZaDsOgvEd-8bNYLQG6jWw" assignment="100.0" resource="//@persons.4"/>
+      <baselines name="11/4/10" context="effortdriven" UUID="_R44zIOgwEd-8bNYLQG6jWw" startDate="2015-02-06T01:42:23.272-0500" finishDate="2015-02-06T01:42:23.272-0500" planEffort="16.0" type="deactivated"/>
+    </workPackages>
+    <workPackages name="Time Schedule" context="effortdriven" UUID="_XYxncOgpEd-WSPN8BfFZWw" state="100%" startDate="2015-02-06T02:00:00.000-0500" finishDate="2015-03-11T07:00:00.000-0400" planEffort="176.0" actualEffort="150.0" predecessors="//@workPackages.0/@workPackages.1/@successors.0">
+      <successors name="-" context="effortdriven" UUID="_qXbp0egpEd-WSPN8BfFZWw" successor="//@workPackages.0/@workPackages.3"/>
+      <assignments name="-" context="effortdriven" UUID="_njV_UOguEd-8bNYLQG6jWw" assignment="100.0" resource="//@persons.3"/>
+      <baselines name="11/4/10" context="effortdriven" UUID="_R45aMOgwEd-8bNYLQG6jWw" startDate="2015-02-06T01:42:23.272-0500" finishDate="2015-03-09T02:42:23.272-0400" planEffort="176.0"/>
+    </workPackages>
+    <workPackages name="Risk Management Plan" context="effortdriven" UUID="_aub7sOgpEd-WSPN8BfFZWw" state="75%" startDate="2015-03-11T07:00:00.000-0400" finishDate="2015-03-16T03:00:00.000-0400" planEffort="20.0" effortToComplete="30.0" actualEffort="10.0" predecessors="//@workPackages.0/@workPackages.2/@successors.0">
+      <successors name="-" context="effortdriven" UUID="_qXcQ4OgpEd-WSPN8BfFZWw" successor="//@workPackages.0/@workPackages.4"/>
+      <assignments name="-" context="effortdriven" UUID="_qHGVgOguEd-8bNYLQG6jWw" assignment="100.0" resource="//@persons.3"/>
+      <baselines name="11/4/10" context="effortdriven" UUID="_R45aMegwEd-8bNYLQG6jWw" startDate="2015-03-09T02:42:23.272-0400" finishDate="2015-03-13T02:42:23.272-0400" planEffort="16.0"/>
+    </workPackages>
+    <workPackages name="QS Plan" context="effortdriven" UUID="_b8Id4OgpEd-WSPN8BfFZWw" startDate="2015-03-16T03:00:00.000-0400" finishDate="2015-03-19T03:00:00.000-0400" planEffort="24.0" effortToComplete="3.0" actualEffort="20.0" predecessors="//@workPackages.0/@workPackages.3/@successors.0">
+      <assignments name="-" context="effortdriven" UUID="_tAiAwOguEd-8bNYLQG6jWw" assignment="100.0" resource="//@persons.4"/>
+      <baselines name="11/4/10" context="effortdriven" UUID="_R45aMugwEd-8bNYLQG6jWw" startDate="2015-03-13T02:42:23.272-0400" finishDate="2015-03-16T02:42:23.272-0400" planEffort="24.0"/>
+    </workPackages>
+    <baselines name="11/4/10" context="effortdriven" UUID="_R44MEOgwEd-8bNYLQG6jWw" startDate="2015-02-01T21:42:23.272-0500" finishDate="2015-03-16T02:42:23.272-0400"/>
+  </workPackages>
+  <workPackages name="Requirement Management" context="effortdriven" UUID="_CvzDMOgnEd-pX4OJvgkDgw" startDate="2015-02-01T00:00:00.000-0500" finishDate="2015-03-19T07:55:00.000-0400" accumulatedEffort="260.0">
+    <workPackages name="Specification" context="effortdriven" UUID="_WTExYOguEd-8bNYLQG6jWw" type="manual" startDate="2015-02-01T21:42:23.272-0500" finishDate="2015-02-07T06:55:06.028-0500" planEffort="40.0" effortToComplete="30.0" actualEffort="20.0">
+      <assignments name="-" context="effortdriven" UUID="_ZcinQOgvEd-8bNYLQG6jWw" assignment="50.0" resource="//@teams.2"/>
+      <baselines name="11/4/10" context="effortdriven" UUID="_R46BQegwEd-8bNYLQG6jWw" startDate="2015-02-01T21:42:23.272-0500" finishDate="2015-02-07T06:55:06.028-0500" planEffort="40.0" type="manual"/>
+    </workPackages>
+    <workPackages name="wp" context="effortdriven" UUID="_Wkss4OguEd-8bNYLQG6jWw" type="manual" startDate="2015-02-10T06:55:06.029-0500" finishDate="2015-03-19T07:55:06.029-0400" planEffort="80.0">
+      <assignments name="-" context="effortdriven" UUID="_aqnj8OgvEd-8bNYLQG6jWw" assignment="70.0" resource="//@teams.2"/>
+      <baselines name="11/4/10" context="effortdriven" UUID="_R46oUOgwEd-8bNYLQG6jWw" startDate="2015-02-10T06:55:06.029-0500" finishDate="2015-03-19T07:55:06.029-0400" planEffort="80.0" type="manual"/>
+    </workPackages>
+    <baselines name="11/4/10" context="effortdriven" UUID="_R46BQOgwEd-8bNYLQG6jWw" startDate="2015-02-01T21:42:23.272-0500" finishDate="2015-03-19T07:55:06.029-0400"/>
+  </workPackages>
+  <workPackages name="Risk Management" context="effortdriven" UUID="_C1s24OgnEd-pX4OJvgkDgw" startDate="2015-02-01T00:00:00.000-0500" finishDate="2015-02-23T00:00:00.000-0500" accumulatedEffort="40.0">
+    <workPackages name="Hire non surfing people" context="effortdriven" UUID="_JVKNoOgnEd-pX4OJvgkDgw" description="When you have installed the risk management plug-in you can see one sample risk. For our surfing team member we are surching a backup." type="fixed duration" startDate="2015-02-02T00:00:00.000-0500" finishDate="2015-02-20T08:00:00.000-0500" duration="120.0" planEffort="20.0">
+      <baselines name="11/4/10" context="effortdriven" UUID="_R47PYOgwEd-8bNYLQG6jWw" startDate="2015-02-01T21:42:23.272-0500" finishDate="2015-02-22T05:42:23.272-0500" duration="120.0" planEffort="20.0" type="fixed duration"/>
+    </workPackages>
+    <baselines name="11/4/10" context="effortdriven" UUID="_R46oUegwEd-8bNYLQG6jWw" startDate="2015-02-01T21:42:23.272-0500" finishDate="2015-02-22T05:42:23.272-0500"/>
+  </workPackages>
+  <workPackages name="Development" context="effortdriven" UUID="_C4qEQOgnEd-pX4OJvgkDgw" startDate="2015-02-01T00:00:00.000-0500" finishDate="2015-03-09T07:00:00.000-0400" accumulatedEffort="1062.0" milestone="//@milestones.1">
+    <workPackages name="Client" context="effortdriven" UUID="_J_R58OgtEd-8bNYLQG6jWw" startDate="2015-02-01T00:00:00.000-0500" finishDate="2015-02-26T04:00:00.000-0500" accumulatedEffort="296.0">
+      <workPackages name="API (Client Side)" context="effortdriven" UUID="_UjEo0OgtEd-8bNYLQG6jWw" startDate="2015-02-02T00:00:00.000-0500" finishDate="2015-02-04T08:00:00.000-0500" planEffort="24.0">
+        <successors name="-" context="effortdriven" UUID="_OX_KIOguEd-8bNYLQG6jWw" successor="//@workPackages.3/@workPackages.0/@workPackages.1"/>
+        <assignments name="-" context="effortdriven" UUID="_6cBVwKdhEeSWQamCpZbrmg" assignment="100.0" resource="//@teams.1"/>
+        <baselines name="11/4/10" context="effortdriven" UUID="_R472cegwEd-8bNYLQG6jWw" startDate="2015-02-01T21:42:23.272-0500" finishDate="2015-02-06T05:42:23.272-0500" planEffort="24.0"/>
+      </workPackages>
+      <workPackages name="Feature 1" context="effortdriven" UUID="_L_rEYOgtEd-8bNYLQG6jWw" startDate="2015-02-05T00:00:00.000-0500" finishDate="2015-02-11T08:00:00.000-0500" planEffort="40.0" predecessors="//@workPackages.3/@workPackages.0/@workPackages.0/@successors.0">
+        <successors name="-" context="effortdriven" UUID="_OX_xMOguEd-8bNYLQG6jWw" successor="//@workPackages.3/@workPackages.0/@workPackages.2"/>
+        <assignments name="-" context="effortdriven" UUID="_x8uYgOgvEd-8bNYLQG6jWw" assignment="100.0" resource="//@teams.1"/>
+        <baselines name="11/4/10" context="effortdriven" UUID="_R48dgOgwEd-8bNYLQG6jWw" startDate="2015-02-06T21:42:23.272-0500" finishDate="2015-02-13T05:42:23.272-0500" planEffort="40.0"/>
+      </workPackages>
+      <workPackages name="Feature 2" context="effortdriven" UUID="_MEU64OgtEd-8bNYLQG6jWw" startDate="2015-02-12T00:00:00.000-0500" finishDate="2015-02-19T04:00:00.000-0500" planEffort="44.0" predecessors="//@workPackages.3/@workPackages.0/@workPackages.1/@successors.0">
+        <successors name="-" context="effortdriven" UUID="_OX_xMeguEd-8bNYLQG6jWw" successor="//@workPackages.3/@workPackages.0/@workPackages.3"/>
+        <assignments name="-" context="effortdriven" UUID="_y9US0OgvEd-8bNYLQG6jWw" assignment="100.0" resource="//@teams.1"/>
+        <baselines name="11/4/10" context="effortdriven" UUID="_R48dgegwEd-8bNYLQG6jWw" startDate="2015-02-13T21:42:23.272-0500" finishDate="2015-02-21T01:42:23.272-0500" planEffort="44.0"/>
+      </workPackages>
+      <workPackages name="Feature 3" context="effortdriven" UUID="_MJcEYOgtEd-8bNYLQG6jWw" startDate="2015-02-19T04:00:00.000-0500" finishDate="2015-02-26T04:00:00.000-0500" planEffort="40.0" predecessors="//@workPackages.3/@workPackages.0/@workPackages.2/@successors.0">
+        <assignments name="-" context="effortdriven" UUID="_1koTUOgvEd-8bNYLQG6jWw" assignment="100.0" resource="//@teams.1"/>
+        <baselines name="11/4/10" context="effortdriven" UUID="_R49EkOgwEd-8bNYLQG6jWw" startDate="2015-02-21T01:42:23.272-0500" finishDate="2015-03-01T01:42:23.272-0500" planEffort="40.0"/>
+      </workPackages>
+      <baselines name="11/4/10" context="effortdriven" UUID="_R472cOgwEd-8bNYLQG6jWw" startDate="2015-02-01T21:42:23.272-0500" finishDate="2015-03-01T01:42:23.272-0500"/>
+    </workPackages>
+    <workPackages name="Server" context="effortdriven" UUID="_KIzpYOgtEd-8bNYLQG6jWw" startDate="2015-02-01T00:00:00.000-0500" finishDate="2015-03-09T07:00:00.000-0400" accumulatedEffort="412.0">
+      <workPackages name="API" context="effortdriven" UUID="_OwIZ0OgtEd-8bNYLQG6jWw" startDate="2015-02-02T00:00:00.000-0500" finishDate="2015-02-03T05:42:23.272-0500" planEffort="16.0">
+        <successors name="-" context="effortdriven" UUID="_QMaVIOguEd-8bNYLQG6jWw" successor="//@workPackages.3/@workPackages.1/@workPackages.1"/>
+        <assignments name="-" context="effortdriven" UUID="_2sM_YOgvEd-8bNYLQG6jWw" assignment="100.0" resource="//@teams.1"/>
+        <baselines name="11/4/10" context="effortdriven" UUID="_R49roOgwEd-8bNYLQG6jWw" startDate="2015-02-01T21:42:23.272-0500" finishDate="2015-02-03T05:42:23.272-0500" planEffort="16.0"/>
+      </workPackages>
+      <workPackages name="Server Environment" context="effortdriven" UUID="_O0yQUOgtEd-8bNYLQG6jWw" startDate="2015-02-04T00:00:00.000-0500" finishDate="2015-02-10T08:00:00.000-0500" planEffort="40.0" predecessors="//@workPackages.3/@workPackages.1/@workPackages.0/@successors.0">
+        <successors name="-" context="effortdriven" UUID="_QMaVIeguEd-8bNYLQG6jWw" successor="//@workPackages.3/@workPackages.1/@workPackages.2"/>
+        <assignments name="-" context="effortdriven" UUID="_4LlHcOgvEd-8bNYLQG6jWw" assignment="100.0" resource="//@teams.1"/>
+        <baselines name="11/4/10" context="effortdriven" UUID="_R49roegwEd-8bNYLQG6jWw" startDate="2015-02-05T21:42:23.272-0500" finishDate="2015-02-10T05:42:23.272-0500" planEffort="40.0"/>
+      </workPackages>
+      <workPackages name="Feature 1" context="effortdriven" UUID="_O5vo0OgtEd-8bNYLQG6jWw" startDate="2015-02-11T00:00:00.000-0500" finishDate="2015-02-17T08:00:00.000-0500" planEffort="40.0" predecessors="//@workPackages.3/@workPackages.1/@workPackages.1/@successors.0">
+        <successors name="-" context="effortdriven" UUID="_QMa8MOguEd-8bNYLQG6jWw" successor="//@workPackages.3/@workPackages.1/@workPackages.3"/>
+        <assignments name="-" context="effortdriven" UUID="_5JaBoOgvEd-8bNYLQG6jWw" assignment="100.0" resource="//@teams.1"/>
+        <baselines name="11/4/10" context="effortdriven" UUID="_R4-SsOgwEd-8bNYLQG6jWw" startDate="2015-02-12T21:42:23.272-0500" finishDate="2015-02-17T05:42:23.272-0500" planEffort="40.0"/>
+      </workPackages>
+      <workPackages name="Feature 2" context="effortdriven" UUID="_Ssb3UOgtEd-8bNYLQG6jWw" startDate="2015-02-18T00:00:00.000-0500" finishDate="2015-02-26T02:00:00.000-0500" planEffort="50.0" predecessors="//@workPackages.3/@workPackages.1/@workPackages.2/@successors.0">
+        <successors name="-" context="effortdriven" UUID="_QMbjQOguEd-8bNYLQG6jWw" successor="//@workPackages.3/@workPackages.1/@workPackages.4"/>
+        <assignments name="-" context="effortdriven" UUID="_6HNtsOgvEd-8bNYLQG6jWw" assignment="100.0" resource="//@teams.1"/>
+        <baselines name="11/4/10" context="effortdriven" UUID="_R4-SsegwEd-8bNYLQG6jWw" startDate="2015-02-19T21:42:23.272-0500" finishDate="2015-02-28T23:42:23.272-0500" planEffort="50.0"/>
+      </workPackages>
+      <workPackages name="Feature 3" context="effortdriven" UUID="_S0520OgtEd-8bNYLQG6jWw" startDate="2015-02-26T02:00:00.000-0500" finishDate="2015-03-09T07:00:00.000-0400" planEffort="60.0" predecessors="//@workPackages.3/@workPackages.1/@workPackages.3/@successors.0">
+        <assignments name="-" context="effortdriven" UUID="_698hYOgvEd-8bNYLQG6jWw" assignment="100.0" resource="//@teams.1"/>
+        <baselines name="11/4/10" context="effortdriven" UUID="_R4-5wOgwEd-8bNYLQG6jWw" startDate="2015-02-28T23:42:23.272-0500" finishDate="2015-03-10T04:42:23.272-0400" planEffort="60.0"/>
+      </workPackages>
+      <baselines name="11/4/10" context="effortdriven" UUID="_R49EkegwEd-8bNYLQG6jWw" startDate="2015-02-01T21:42:23.272-0500" finishDate="2015-03-10T04:42:23.272-0400"/>
+    </workPackages>
+    <baselines name="11/4/10" context="effortdriven" UUID="_R47PYegwEd-8bNYLQG6jWw" startDate="2015-02-01T21:42:23.272-0500" finishDate="2015-03-10T04:42:23.272-0400"/>
+  </workPackages>
+  <workPackages name="Testing" context="effortdriven" UUID="_C7pt4OgnEd-pX4OJvgkDgw" startDate="2015-02-01T00:00:00.000-0500" finishDate="2015-05-22T07:54:00.000-0400" accumulatedEffort="880.0">
+    <workPackages name="Test Plan" context="effortdriven" UUID="_YaowQOgtEd-8bNYLQG6jWw" startDate="2015-02-02T00:00:00.000-0500" finishDate="2015-02-06T08:00:00.000-0500" planEffort="40.0">
+      <successors name="-" context="effortdriven" UUID="_AA6W4OguEd-8bNYLQG6jWw" successor="//@workPackages.4/@workPackages.1"/>
+      <assignments name="-" context="effortdriven" UUID="_JkwZwOgwEd-8bNYLQG6jWw" assignment="100.0" resource="//@roles.4"/>
+      <baselines name="11/4/10" context="effortdriven" UUID="_R4_g0OgwEd-8bNYLQG6jWw" startDate="2015-02-01T21:42:23.272-0500" finishDate="2015-02-08T05:42:23.272-0500" planEffort="40.0"/>
+    </workPackages>
+    <workPackages name="Test Specification" context="effortdriven" UUID="_YlUWQOgtEd-8bNYLQG6jWw" startDate="2015-02-09T00:00:00.000-0500" finishDate="2015-02-20T08:00:00.000-0500" planEffort="80.0" milestone="//@milestones.2" predecessors="//@workPackages.4/@workPackages.0/@successors.0">
+      <successors name="-" context="effortdriven" UUID="_AA698OguEd-8bNYLQG6jWw" successor="//@workPackages.4/@workPackages.2"/>
+      <assignments name="-" context="effortdriven" UUID="_K3Kc0OgwEd-8bNYLQG6jWw" assignment="100.0" resource="//@roles.4"/>
+      <baselines name="11/4/10" context="effortdriven" UUID="_R4_g0egwEd-8bNYLQG6jWw" startDate="2015-02-08T21:42:23.272-0500" finishDate="2015-02-22T05:42:23.272-0500" planEffort="80.0"/>
+    </workPackages>
+    <workPackages name="Pre-Integration Tests" context="effortdriven" UUID="_6HaM4OgtEd-8bNYLQG6jWw" milestoneAssignment="Start after" startDate="2015-03-16T00:53:00.000-0400" finishDate="2015-04-10T07:53:00.000-0400" planEffort="160.0" milestone="//@milestones.1" predecessors="//@workPackages.4/@workPackages.1/@successors.0">
+      <successors name="-" context="effortdriven" UUID="_AA7lAOguEd-8bNYLQG6jWw" successor="//@workPackages.4/@workPackages.3"/>
+      <assignments name="-" context="effortdriven" UUID="_Lt864OgwEd-8bNYLQG6jWw" assignment="100.0" resource="//@roles.4"/>
+      <baselines name="11/4/10" context="effortdriven" UUID="_R5AH4OgwEd-8bNYLQG6jWw" startDate="2015-03-15T22:42:23.272-0400" finishDate="2015-04-12T06:42:23.272-0400" planEffort="160.0"/>
+    </workPackages>
+    <workPackages name="System Tests" context="effortdriven" UUID="_6NKPkOgtEd-8bNYLQG6jWw" milestoneAssignment="Start after" startDate="2015-04-27T00:54:00.000-0400" finishDate="2015-05-22T07:54:00.000-0400" planEffort="160.0" milestone="//@milestones.3" predecessors="//@workPackages.4/@workPackages.2/@successors.0">
+      <assignments name="-" context="effortdriven" UUID="_MgQhkOgwEd-8bNYLQG6jWw" assignment="100.0" resource="//@roles.4"/>
+      <baselines name="11/4/10" context="effortdriven" UUID="_R5AH4egwEd-8bNYLQG6jWw" startDate="2015-04-26T22:42:23.272-0400" finishDate="2015-05-24T06:42:23.272-0400" planEffort="160.0"/>
+    </workPackages>
+    <baselines name="11/4/10" context="effortdriven" UUID="_R4-5wegwEd-8bNYLQG6jWw" startDate="2015-02-01T21:42:23.272-0500" finishDate="2015-05-24T06:42:23.272-0400"/>
+  </workPackages>
+  <roles name="Project Manager" context="effortdriven" UUID="_k_jf0OghEd-pX4OJvgkDgw" initials="PM" description="The person responsible for developing, in conjunction with the Project Sponsor, a definition of the project. The Project Manager then ensures that the project is delivered on time, to budget and to the required quality standard (within agreed specifications). " responsibilities="Managing and leading the project team.&#xA;Recruiting project staff and consultants.&#xA;Managing co-ordination of the partners and working groups engaged in project work.&#xA;Detailed project planning and control including:&#xA;Developing and maintaining a detailed project plan.&#xA;Managing project deliverables in line with the project plan.&#xA;Recording and managing project issues and escalating where necessary.&#xA;Resolving cross-functional issues at project level."/>
+  <roles name="Project Administrator" context="effortdriven" UUID="_lGOvkOghEd-pX4OJvgkDgw" initials="PA" responsibilities="Maintenance of the project plan,&#xA;maintenance and updating of a project website (if appropriate).  &#xA;Provides administrative support to the Project Manager."/>
+  <roles name="Java Developer" context="effortdriven" UUID="_lKgyoOghEd-pX4OJvgkDgw" initials="JD" description="Develop and test java code" responsibilities="Develop java code, &#xA;junit testing regarding the QS requirements,"/>
+  <roles name="Build and Infrastructure Manager" context="effortdriven" UUID="_gaossOgtEd-8bNYLQG6jWw" initials="BIM" description="Developer with good Hardware KnowHow" responsibilities="Organise the Hardware&#xA;Setup the ant build&#xA;Setup Continuous Integration&#xA;Setup QS Tools "/>
+  <roles name="Tester" context="effortdriven" UUID="_9oyXAOgvEd-8bNYLQG6jWw" assignments="//@workPackages.4/@workPackages.0/@assignments.0 //@workPackages.4/@workPackages.1/@assignments.0 //@workPackages.4/@workPackages.2/@assignments.0 //@workPackages.4/@workPackages.3/@assignments.0" initials="TES" description="This role will assigned to each team member. Currently not sure who will test the product" responsibilities="Software Testing against the specification"/>
+  <teams name="Management Team" context="effortdriven" UUID="_Yta_0OghEd-pX4OJvgkDgw" initials="MT" description="Internal and external team leader and manager" persons="//@persons.3 //@persons.4"/>
+  <teams name="Development Team" context="effortdriven" UUID="_Yzz7sOghEd-pX4OJvgkDgw" assignments="//@workPackages.3/@workPackages.0/@workPackages.1/@assignments.0 //@workPackages.3/@workPackages.0/@workPackages.2/@assignments.0 //@workPackages.3/@workPackages.0/@workPackages.3/@assignments.0 //@workPackages.3/@workPackages.1/@workPackages.0/@assignments.0 //@workPackages.3/@workPackages.1/@workPackages.1/@assignments.0 //@workPackages.3/@workPackages.1/@workPackages.2/@assignments.0 //@workPackages.3/@workPackages.1/@workPackages.3/@assignments.0 //@workPackages.3/@workPackages.1/@workPackages.4/@assignments.0 //@workPackages.3/@workPackages.0/@workPackages.0/@assignments.0" description="Java and PHP Developers" persons="//@persons.0 //@persons.1 //@persons.2"/>
+  <teams name="Business Management" context="effortdriven" UUID="_QZ7-UOgvEd-8bNYLQG6jWw" assignments="//@workPackages.1/@workPackages.0/@assignments.0 //@workPackages.1/@workPackages.1/@assignments.0" description="Requirement Specification, Product Owner, Stackehole"/>
+  <persons name="Clum" context="effortdriven" UUID="_MBfN0OgjEd-pX4OJvgkDgw" firstName="Thomas" initials="CTH" phone="33935874" mobile="03833488" email="Thomas.Clum@2-plan.com" fax="39393400" location="Germany" department="Freising" company="2-plan GmbH" roles="//@roles.2 //@roles.3" teams="//@teams.1">
+    <costRates name="-" context="effortdriven" UUID="_-3ssUKdgEeSWQamCpZbrmg"/>
+    <availability context="effortdriven" UUID="_WF0ZgOgjEd-pX4OJvgkDgw" startDate="2015-02-01T13:42:23.272-0500" finishDate="2016-02-27T13:42:23.272-0500" availability="80.0"/>
+    <availability context="effortdriven" UUID="_cP59MOgjEd-pX4OJvgkDgw" startDate="2015-04-03T14:42:23.272-0400" finishDate="2015-04-17T14:42:23.272-0400"/>
+  </persons>
+  <persons name="Holiday" context="effortdriven" UUID="_MKW18OgjEd-pX4OJvgkDgw" firstName="Rita" initials="HOR" phone="392302309" mobile="9302302309" email="Holiday.R@gmail.com" fax="3933030" location="USA" department="Homeoffice" company="Freelancer" roles="//@roles.2" teams="//@teams.1">
+    <costRates name="-" context="effortdriven" UUID="__ONH0KdgEeSWQamCpZbrmg"/>
+    <availability context="effortdriven" UUID="_quixAOgjEd-pX4OJvgkDgw" startDate="2015-04-25T14:42:23.272-0400" finishDate="2015-05-04T14:42:23.272-0400" availability="50.0"/>
+  </persons>
+  <persons name="Hackers" context="effortdriven" UUID="_MVuYcOgjEd-pX4OJvgkDgw" firstName="John" initials="JHA" phone="393293023" mobile="939393030" email="GoToHackers@hackers.com" fax="393939" location="Hawaii" department="Beach Resort" company="Developers2Surfing" roles="//@roles.2" teams="//@teams.1">
+    <costRates name="-" context="effortdriven" UUID="__hGOoKdgEeSWQamCpZbrmg"/>
+    <availability context="effortdriven" UUID="__0_mUOgjEd-pX4OJvgkDgw" startDate="2015-02-01T13:42:23.272-0500" finishDate="2016-02-01T13:42:23.272-0500" availability="10.0"/>
+  </persons>
+  <persons name="Master" context="effortdriven" UUID="_uA888OgjEd-pX4OJvgkDgw" assignments="//@workPackages.0/@workPackages.2/@assignments.0 //@workPackages.0/@workPackages.3/@assignments.0 //@workPackages.0/@workPackages.0/@assignments.0" firstName="John" initials="MASTER" phone="39239329239" mobile="939393939" email="CallMeMaster@vips.com" fax="39393939" location="USA" department="NY" company="2-plan" teams="//@teams.0">
+    <costRates name="-" context="effortdriven" UUID="_9LS04KdgEeSWQamCpZbrmg"/>
+    <availability context="effortdriven" UUID="_fVxQAOglEd-pX4OJvgkDgw" startDate="2015-02-01T00:00:00.000-0500" finishDate="2015-02-27T00:00:00.000-0500" availability="90.0"/>
+  </persons>
+  <persons name="Simon" context="effortdriven" UUID="_uIJxIOgjEd-pX4OJvgkDgw" assignments="//@workPackages.0/@workPackages.4/@assignments.0 //@workPackages.0/@workPackages.1/@assignments.0" firstName="Hoffmann" initials="PRO" phone="29292929" mobile="938923982389" email="Simon@Simon.net" fax="3939393" location="Germany" department="Munich" company="na" teams="//@teams.0">
+    <costRates name="-" context="effortdriven" UUID="_-LyBgKdgEeSWQamCpZbrmg"/>
+  </persons>
+  <milestones name="Project Start" context="effortdriven" UUID="_hPi4QOgpEd-WSPN8BfFZWw" date="2015-02-07T06:20:39.321-0500" description="All Management Plans must be available"/>
+  <milestones name="Release Candidate 1" context="effortdriven" UUID="_sj0lsOglEd-pX4OJvgkDgw" date="2015-03-15T06:53:32.865-0400"/>
+  <milestones name="Feature Freeze" context="effortdriven" UUID="_sqpmcOglEd-pX4OJvgkDgw" date="2015-02-28T05:54:31.550-0500" description="Last date to change any requirements"/>
+  <milestones name="R.09" context="effortdriven" UUID="_6IcBQOglEd-pX4OJvgkDgw" date="2015-04-26T06:54:56.113-0400" description="Start internal tests"/>
+  <milestones name="R1.0" context="effortdriven" UUID="__ywfwOglEd-pX4OJvgkDgw" date="2015-07-03T05:55:24.463-0400" external="true" description="First release published"/>
+  <risks name="Availability of John Hackers" context="effortdriven" UUID="_VCJ1sOgmEd-pX4OJvgkDgw" description="John is working in Hawaii. Depending on the wind conditions his availability could be very low." likelihood="Likely" impact="Major" strategies="Peter is searching for someone else and who is not surfing (or is living in Siberia)" assignedTo="//@persons.3"/>
+</model:Project>
